@@ -6,7 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.stage.Stage;
 import javafx.scene.control.Button;
 
 
@@ -44,6 +43,13 @@ public class NavBarController {
     @FXML
     private void goToLocation() {
         loadView("/savelab/location-view.fxml");
+    }
+
+    @FXML
+    public void initialize() {
+        // Load the image from resources
+        Image logoImage = new Image(getClass().getResourceAsStream("/savelab/images/SAVELabLogo.jpg"));
+        logoView.setImage(logoImage);
     }
 
     // Generic method to load different views
