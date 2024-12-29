@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.HBox?>
 
 <HBox xmlns:fx="http://javafx.com/fxml" fx:controller="savelab.NavBarController" spacing="20" styleClass="nav-bar">
-    <ImageView fx:id="logoImage" fitHeight="50" fitWidth="50" onMouseClicked="#goToHome"/>
+    <ImageView fx:id="logoView" fitHeight="50" fitWidth="50" onMouseClicked="#goToHome"/>
     <Button fx:id="homeButton" text="Home" onAction="#goToHome" styleClass="nav-button"/>
     <Button fx:id="researchButton" text="Research" onAction="#goToResearch" styleClass="nav-button"/>
     <Button fx:id="peopleButton" text="People" onAction="#goToPeople" styleClass="nav-button"/>
