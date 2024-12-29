@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="savelab.ResearchController" stylesheets="@style.css">
+    <VBox>
+        <fx:include source="nav-bar.fxml"/>
+        <!-- The rest of the content specific to the view goes here -->
+        <fx:include source="footer.fxml"/>
+    </VBox>
+</AnchorPane>

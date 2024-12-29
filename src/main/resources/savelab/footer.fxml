@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Hyperlink?>
+
+<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="savelab.FooterController" spacing="15" styleClass="footer-bar">
+    <Hyperlink fx:id="contactUsLink" text="Contact Us" onAction="#openContactUs" styleClass="footer-link"/>
+    <Hyperlink fx:id="linkedinLink" text="LinkedIn" onAction="#openLinkedIn" styleClass="footer-link"/>
+    <Hyperlink fx:id="twitterLink" text="X formerly Twitter" onAction="#openTwitter" styleClass="footer-link"/>
+    <Hyperlink fx:id="researchLink" text="Research Papers" onAction="#openResearchPapers" styleClass="footer-link"/>
+</HBox>
