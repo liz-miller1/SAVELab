@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.TitledPane?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
 <BorderPane xmlns:fx="http://javafx.com/fxml" fx:id="researchPane" fx:controller="savelab.ResearchController" stylesheets="@style.css">
     <top>
         <!-- Include the navigation bar -->
@@ -10,7 +14,32 @@
     </top>
     <!-- Center content area (this will be updated dynamically) -->
     <center>
-        <StackPane fx:id="contentArea" style="-fx-background-color: #f0f0f0;"/>
+        <VBox style="-fx-background-color: #f0f0f0;">
+            <VBox fx:id="current" style="-fx-background-color: #f0f0f0;" GridPane.columnIndex="1" GridPane.rowIndex="0" spacing="10">
+                <Label text="Current Research" fx:id="currentLabel" style="-fx-font-size: 20px; -fx-font-weight: bold;" textAlignment="CENTER"/>
+                <TitledPane fx:id="paper1"/>
+                <TitledPane fx:id="paper2"/>
+                <TitledPane fx:id="paper3"/>
+                <TitledPane fx:id="paper4"/>
+                <padding>
+                    <Insets top="20" right="50" bottom="20" left="50"/>
+                </padding>
+            </VBox>
+            <VBox fx:id="previous" style="-fx-background-color: #f0f0f0;" GridPane.columnIndex="1" GridPane.rowIndex="2" spacing="10">
+                <Label text="Previous Research" fx:id="previousLabel" style="-fx-font-size: 20px; -fx-font-weight: bold;" textAlignment="CENTER"/>
+                <TitledPane fx:id="paper5"/>
+                <TitledPane fx:id="paper6"/>
+                <TitledPane fx:id="paper7"/>
+                <TitledPane fx:id="paper8"/>
+                <padding>
+                    <Insets top="20" right="50" bottom="20" left="50"/>
+                </padding>
+            </VBox>
+            <padding>
+                <Insets top="20" right="50" bottom="20" left="50"/>
+            </padding>
+        </VBox>
+
     </center>
     <!-- Include the footer -->
     <bottom>
